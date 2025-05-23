@@ -1,5 +1,4 @@
 export default function StudentsList() {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const students = [
     {id: 1, name: '김일'},
     {id: 2, name: '김이'},
@@ -19,12 +18,7 @@ export default function StudentsList() {
           {
             students.map(students =>
               <tr key={students.id}>
-                <td> <ul>
-                {
-                numbers.map((number, index) => 
-                  <li key={index}> {number}. {students.name} 님</li>
-                )
-                }</ul>
+                <td> <li>{students.id}. {students.name} 님</li>
                 </td>
               </tr>
             )
