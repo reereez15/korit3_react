@@ -21,10 +21,10 @@ function App() {
   const [ repodata, setRepodata ] = useState<Repository[]>([]);
   // 컬럼 정의
   const [ columnDefs ] = useState<ColDef[]>([
-    { field: 'owner.login', sortable: true, filter: true},
+    { headerName: 'Github ID', field: 'owner.login', sortable: true, filter: true},
     { field: 'name', sortable: true, filter: true },
-    { field: 'description', sortable: true, filter: true},
-    { field: 'html_url', sortable: true, filter: true},
+    { headerName: '설명', field: 'description', sortable: true, filter: true},
+    { headerName: 'Link', field: 'html_url', sortable: true, filter: true},
     { 
       field: 'full_name',
       cellRenderer: (params: ICellRendererParams) => (
