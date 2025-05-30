@@ -53,7 +53,7 @@ export default function AddCar() {
           <DialogTitle>New Car</DialogTitle>
           <CarDialogContent car={car} handleChange={handleChange} />
           <DialogActions>
-            <button onClick={handleClickOpen}>Cancel | 취소</button>
+            <button onClick={handleClose}>Cancel | 취소</button>
             <button onClick={handleSave}>Save | 저장</button>
           </DialogActions>
         </Dialog>  
